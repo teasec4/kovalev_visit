@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>KOVALEV - links</title>
+    <link href="index.css" rel="stylesheet">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            VANTA.BIRDS({
+                el: "#vanta",
+                mouseControls: true,
+                touchControls: true,
+                gyroControls: false,
+                minHeight: 200.00,
+                minWidth: 200.00,
+                scale: 1.00,
+                scaleMobile: 1.00
+            })
+
+            setTimeout(() => {
+                const main = document.querySelector('main')
+                main.style.opacity = 1
+                main.style.filter = 'blur(0px)'
+            }, 1000)
+
+        })
+    </script>
+
+</head>
+<body>
+<div id="vanta">
+
+</div>
+
+    <main>
+        <header>
+            <img src="./img/max.jpg"/>
+            <h1>@maksim__kovalev__</h1>
+        </header>
+        <ul>
+            <li>
+                <a href="http://www.teasec4.ru/">
+                    Official Website
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    Twitter
+                </a>
+            </li>
+            <li>
+                <a href="https://github.com/teasec4">
+                    Github
+                </a>
+            </li>
+        </ul>
+    </main>
+
+</body>
+</html>
